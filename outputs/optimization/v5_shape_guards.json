@@ -1,0 +1,229 @@
+{
+  "ladder": [
+    "A",
+    "B",
+    "S1",
+    "C",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "E",
+    "S7",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "D",
+    "L"
+  ],
+  "guards": {
+    "S1": {
+      "target": "Traffic_Normal14.png",
+      "verdict": 0,
+      "slot": "C",
+      "terms": [
+        [
+          "z_deg",
+          ">=",
+          2.97
+        ],
+        [
+          "LDD",
+          ">=",
+          84.1
+        ],
+        [
+          "L2DD",
+          ">=",
+          61.0
+        ],
+        [
+          "dkurt",
+          "<=",
+          2.161
+        ]
+      ],
+      "margin": 0.5840935845969811,
+      "captures": 0
+    },
+    "S2": {
+      "target": "Normal10.png",
+      "verdict": 0,
+      "slot": "E",
+      "terms": [
+        [
+          "z_deg",
+          "<=",
+          1.815
+        ],
+        [
+          "LDD",
+          "<=",
+          7.787
+        ],
+        [
+          "slope3",
+          ">=",
+          18.31
+        ],
+        [
+          "slope5",
+          "<=",
+          0.8196
+        ]
+      ],
+      "margin": 0.8507212888199089,
+      "captures": 0
+    },
+    "S3": {
+      "target": "Traffic_Normal7.png",
+      "verdict": 0,
+      "slot": "E",
+      "terms": [
+        [
+          "NSDD",
+          "<=",
+          2.0
+        ],
+        [
+          "near_low",
+          "<=",
+          1e-09
+        ],
+        [
+          "rev10",
+          ">=",
+          7.0
+        ],
+        [
+          "ds_max",
+          ">=",
+          52.0
+        ]
+      ],
+      "margin": 1.2239073082285798,
+      "captures": 1
+    },
+    "S4": {
+      "target": "throughput_Normal_13.png",
+      "verdict": 0,
+      "slot": "E",
+      "terms": [
+        [
+          "LDD",
+          ">=",
+          39.61
+        ],
+        [
+          "slope3",
+          "<=",
+          7.89
+        ],
+        [
+          "rev10",
+          "<=",
+          2.0
+        ],
+        [
+          "ds_max",
+          ">=",
+          51.0
+        ]
+      ],
+      "margin": 1.0577533292649506,
+      "captures": 0
+    },
+    "S5": {
+      "target": "throughput_Normal_8.png",
+      "verdict": 0,
+      "slot": "E",
+      "terms": [
+        [
+          "slope3",
+          "<=",
+          10.82
+        ],
+        [
+          "pos",
+          ">=",
+          -7.947
+        ],
+        [
+          "rev10",
+          ">=",
+          8.0
+        ],
+        [
+          "ds_min",
+          ">=",
+          57.0
+        ]
+      ],
+      "margin": 1.4300579876824906,
+      "captures": 1
+    },
+    "S6": {
+      "target": "Problematic_V.png",
+      "verdict": 1,
+      "slot": "L",
+      "terms": [
+        [
+          "LDD",
+          ">=",
+          41.59
+        ],
+        [
+          "pos",
+          "<=",
+          -33.64
+        ],
+        [
+          "rev10",
+          ">=",
+          7.0
+        ],
+        [
+          "dskew",
+          "<=",
+          -0.5942
+        ]
+      ],
+      "margin": 1.0489078642372716,
+      "captures": 0
+    },
+    "S7": {
+      "target": "Traffic_Problematic_Z.png",
+      "verdict": 1,
+      "slot": "F",
+      "terms": [
+        [
+          "LDD",
+          "<=",
+          -0.93
+        ],
+        [
+          "L2DD",
+          ">=",
+          52.63
+        ],
+        [
+          "slope3",
+          "<=",
+          3.405
+        ],
+        [
+          "tail_vol",
+          "<=",
+          -34.31
+        ]
+      ],
+      "margin": 0.8756506959153363,
+      "captures": 0
+    }
+  },
+  "insample_acc": 175,
+  "n": 180
+}
