@@ -1,0 +1,22 @@
+param,letter,unit,value,role
+Z_B,E,sigma,8.11866,Case C: LDV worse than mean by >= Z_B sigma -> Problematic
+Z_D,T,sigma,1.73028,Case E: z-condition when percentile is moderate
+Z_F,L,sigma,1.3977,Case G: cap on z for the recovery-to-normal rule
+Z_H,N,sigma,3.17526,Case I: z-condition on large last-day degradation
+Z_J,D,sigma,5.168,Case K: z-condition on sustained 2-day degradation
+PCT_C,V,%,93.5961,Case D (moved to just before default L): degradation-direction percentile -> Problematic (last-resort)
+PCT_D,S,%,48.4282,Case E: percentile floor (combined with Z_D)
+LDD_E,R,%,-1.13372,Case F: last-day degradation <= this -> Normal (negative-allowed per user)
+LDD_F,J,%,-8.14178,"Case G: LDD >= this (recovery rule, with L2DD cap) -> Normal"
+L2DD_F,I,%,9.27097,Case G: 2-day degradation <= this
+LDD_G,X,%,21.9457,Case H: LDD >= this with rare history
+LDD_H,Z,%,70.3461,Case I: LDD >= this (with z or percentile)
+PCT_H,O,%,98.4566,Case I: percentile floor (OR with Z_H)
+LDD_I,M,%,1.32575,Case J: LDD <= this (sustained 2-day collapse rule)
+L2DD_I,K,%,-11.4872,Case J: L2DD >= this
+NSDD_G,Y,count,2,Case H: NSDD <= this (rare event)
+NS2DD_I,A,count,7,Case J: NS2DD <= this (rare event)
+LDD_J,B,%,32.787,Case K: LDD <= this
+L2DD_J,C,%,67.6681,Case K: L2DD >= this
+NY,NY,%,18.5416,Case A: LDD >= this while LDV better than mean
+NX,NX,count,42,Case A: NSDD <= this
