@@ -1,0 +1,10 @@
+{
+  "label_latency": 3,
+  "retrain_interval": 2,
+  "first_retrain_day": 75,
+  "fit_budget": 1500,
+  "do_cv": false,
+  "gate_tolerance": 0.0,
+  "min_holdout_for_gate": 8,
+  "seed": 1
+}
